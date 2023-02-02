@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>array</title>
+  </head>
+  <body>
+    <main>
+      <div id="box">
+        <h1>Playliste</h1>
+        <ul id="playlist"></ul>
+      </div>
+    </main>
+    <script src="script.js"></script>
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        color: antiquewhite;
+      }
+      main {
+        min-height: 100dvh;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        background-color: antiquewhite;
+      }
+      #box {
+        background-color: firebrick;
+        padding: 3.75rem;
+        border-radius: 1.25rem;
+        display: grid;
+        gap: 2.5rem;
+        filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.2));
+      }
+      #playlist {
+        display: grid;
+        gap: 0.5rem;
+        font-size: 1.5rem;
+      }
+      li {
+        list-style: "✨";
+      }
+      li::before {
+        content: " - ";
+        padding-inline: 0.25rem;
+      }
+      h1 {
+        text-align: center;
+        font-size: 4rem;
+        font-family: Helvetica, Arial, sans-serif;
+        text-decoration: underline 4px;
+      }
+    </style>
+  </body>
+</html>
